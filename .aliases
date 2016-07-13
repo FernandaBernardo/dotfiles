@@ -1,11 +1,5 @@
-# Bankfacil
-alias bkfssh="cd ~/workspace/bankfacil && vagrant ssh"
-alias bkfup="cd ~/workspace/bankfacil && vagrant up"
-alias bkfprod="ssh _vitor@gateway.bankfacil.com.br"
-alias bkfstag="ssh _vitor@gateway-staging.bankfacil.com.br"
-
 # Easier navigation: .., ..., ...., ....., ~ and -
-alias ..="cd .."
+alias u="cd .."
 alias 2..="cd ../.."
 alias 3..="cd ../../.."
 alias 4..="cd ../../../.."
@@ -13,7 +7,7 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias work="cd ~/workspace"
+alias proj="cd ~/Projetos"
 alias doc="cd ~/Documents"
 alias down="cd ~/Downloads"
 alias desk="cd ~/Desktop"
@@ -99,12 +93,12 @@ alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
 
 # Show/hide hidden files in Finder
-alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
-alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+#alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+#alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
 # Hide/show all desktop icons (useful when presenting)
-alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
-alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+#alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+#alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 
 # URL-encode strings
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'

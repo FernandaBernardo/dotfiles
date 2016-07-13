@@ -182,7 +182,7 @@
 	insteadOf = "gist:"
 
 [user]
-	signingkey = DF4C1E27
-	name = Vitor D'Amico
-	email = vitordami@gmail.com
+#	signingkey = DF4C1E27
+	name = Fernanda Bernardo
+	email = fernandabernardo94@gmail.com
 
